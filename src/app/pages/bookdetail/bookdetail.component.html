@@ -1,0 +1,23 @@
+<div class="bookDetailContainer shadowBorder">
+    <h2>{{book.title}}</h2>
+    <div class="bookDescContainer">
+        <div *ngIf="book.imgPath; else noImg" class="bookImg">
+            <img [src]="book.imgPath">
+        </div>
+        <ng-template #noImg>
+            <div class="noImgDefault">
+                <p>{{book.title}}</p>
+            </div>
+        </ng-template>
+        <div class="textBookDesc">
+            <p>autor: {{book.author}}</p>
+            <p>páginas: {{book.pages}}</p>
+            <p>descripción: </p>
+            <div class="shadowBorder bookDesc">
+                <p> Esta es la descripción del libro, no crei que fuera necesario ejemplificar cada caso y por eso solo dejo este texto de ejemplo...</p>
+            </div>
+        </div>
+    </div>
+    <a class="buyButton" (click)="addBookToCart()" [innerHTML]="bookAlreadyInCart ? 'Ya está en el carrito' : 'Añadir al carrito'"></a>
+    <a class="buyButton" (click)="buyBook()">Comprar ahora</a>
+</div>

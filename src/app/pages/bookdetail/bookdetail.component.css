@@ -1,0 +1,95 @@
+h2{
+    color: #7299a5;
+    text-shadow: 3px 3px 5px lightblue;
+}
+
+a{
+    text-shadow: 3px 3px 5px lightblue;
+    text-decoration: none;
+    margin: 15px 0;
+    font-size: x-large;
+    transition-duration: 0.5s;
+}
+
+a:hover{
+    font-size: xx-large;
+}
+
+.bookDetailContainer{
+    margin-top: 130px;
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bookDescContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.noImgDefault{
+    width: 370px;
+    aspect-ratio: 9/16;
+    background-color: rgb(47, 130, 202);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    margin-bottom: 15px;
+    margin-left: 10%;
+}
+
+.bookImg{
+    width: 370px;
+    aspect-ratio: 9/16;
+    background-color: rgb(47, 130, 202);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    margin-bottom: 15px;
+    margin-left: 10%;
+}
+
+.bookImg img{
+    width: 370px;
+}
+
+.textBookDesc{
+    font-size: x-large;
+    margin-left: 30px;
+}
+
+.bookDesc{
+    overflow: clip;
+}
+
+.buyButton{
+    color:white;
+    padding: 10px;
+    text-shadow: 3px 3px 5px lightblue;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: x-large;
+    text-align: center;
+    background-color:  rgb(47, 130, 202);
+    transition-duration: 0.5s;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.buyButton:hover{
+    background-color: rgb(35, 110, 175);
+    padding: 15px;
+}
+
+@media screen and (min-width: 1020px) {
+    .bookDesc{
+        width: 435px;
+    }
+}

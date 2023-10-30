@@ -1,0 +1,31 @@
+footer{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    right: 0;
+    margin-top: 25px;
+}
+
+footer::after{
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    background-color: #73b5c987;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li{
+    margin-bottom: 5px;
+}
+
+h3{
+    color: #7299a5;
+}

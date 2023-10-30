@@ -1,0 +1,10 @@
+<div class="allPaginationComponent">
+    <div [class]="'numberContainer' + (actualPage === 1 ? ' disabled' : '')"
+    (click)="actualPage === 1 ? '' : changePage(1)">«</div>
+    <div *ngFor="let element of elements">
+        <div [class]="'numberContainer' + (actualPage === element ? ' disabled' : '')"
+             (click)="actualPage === element ? '' : changePage(element)">{{element}}</div>
+    </div>
+    <div [class]="'numberContainer' + (actualPage === amountPages ? ' disabled' : '')"
+    (click)="actualPage === amountPages ? '' : changePage(amountPages)">»</div>
+</div>

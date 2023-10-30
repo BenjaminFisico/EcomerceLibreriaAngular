@@ -1,0 +1,14 @@
+<div class="completeTitlesContainer shadowBorder">
+    <table>
+        <tr *ngFor="let column of columns">
+            <td class="shadowBorder"> 
+                <div *ngFor="let title of column">
+                    <h2>
+                        <a href="/#">{{title}}</a>
+                    </h2> 
+                    <p class="author">Author of book</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>

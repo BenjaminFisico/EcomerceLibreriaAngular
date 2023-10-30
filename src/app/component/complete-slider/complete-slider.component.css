@@ -1,0 +1,59 @@
+.completeSlider{
+    display: flex;
+    align-items: center;
+}
+
+.sliderContainer{
+    height: 250px;
+    width: 90%;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    display: flex;
+}
+
+.sliderItem{
+    flex: 0 0 100%;
+    object-fit: cover;
+    scroll-snap-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+
+.buttonSlider {
+    margin: 1vw;
+    font-size: 2rem;
+    opacity: 50%;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.buttonSlider:hover {
+    opacity: 100%;
+}
+
+.positionButtonsContainer{
+    justify-content: center;
+    display: flex;
+}
+
+.positionButton{
+    text-decoration: none;
+    margin: 10px;
+    background-color: gray;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    transition: 0.5s;
+}
+
+.active{
+    background-color: lightblue;
+}
+
+.positionButton:hover{
+    background-color: darkgray;
+}

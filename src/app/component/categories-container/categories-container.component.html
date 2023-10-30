@@ -1,0 +1,7 @@
+<div class="categoriesContainer shadowBorder">
+    <h3>Categorías</h3>
+    <ul class="fontMenuStyles">
+        <li [class]="selectedCategories.length === 0 ? 'selectedItem' : ''"> <a (click)="unSelectAll()">Todos</a> </li>
+        <li *ngFor="let category of categories" [class]="categoryIsSelected(category) ? 'selectedItem' : '' " > <a (click)="toogleSelectCategory(category)"> {{category}} </a> </li>
+    </ul>
+</div>

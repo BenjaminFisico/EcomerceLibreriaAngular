@@ -1,0 +1,32 @@
+.topZone{
+    text-align: center;
+    margin-top: 117px;
+}
+
+.midZone{
+    display: flex;
+}
+
+.booksContainer{
+    margin-left: 10px;
+    background-color: aliceblue;
+    text-align: center;
+    overflow: hidden;
+    min-width: 220px;
+}
+
+.allBooks{
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+@media screen and (min-width: 720px) {
+    .midZone{
+        margin-left: 5%;
+    }
+}

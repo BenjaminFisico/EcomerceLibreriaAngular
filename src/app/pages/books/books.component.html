@@ -1,0 +1,15 @@
+<main>
+    <div class="topZone">
+        <h2><i class="fa-solid fa-book"></i> Colección de libros</h2>
+    </div>
+    <div class="midZone">
+        <app-categories-container (changeCategoryEvent)="changeCategory($event)" ></app-categories-container>
+        <div class="booksContainer shadowBorder">
+            <div class="allBooks">
+                <app-bookcontainer *ngFor="let book of books" [book]="book"></app-bookcontainer>
+            </div>
+        </div>
+    </div>
+    <br>
+    <app-pagination [actualPage]="page" [collectionSize]="collectionSize" [perPage]="perPage" (changePageEvent)="changePage($event)"></app-pagination>
+</main>

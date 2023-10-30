@@ -1,0 +1,41 @@
+.completeSliderBooks{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sliderContainer {
+    width: 90%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    display: flex;
+}
+
+.sliderItem {
+    flex: 0 0 160px;
+    width: 160px;
+    object-fit: cover;
+    scroll-snap-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    margin-right: 20px;
+}
+
+.buttonSlider {
+    margin: 1vw;
+    font-size: 2rem;
+    opacity: 50%;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.buttonSlider:hover {
+    opacity: 100%;
+}
+
+.slideBooks {
+    display: flex;
+}

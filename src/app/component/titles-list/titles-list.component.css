@@ -1,0 +1,25 @@
+table{
+    display: flex;
+    background-color: aliceblue;
+}
+
+table td{
+    padding: 0 20px;
+}
+
+h2 a{
+    text-decoration: none;
+    color: #7299a5;
+    text-shadow: 3px 3px 5px lightblue;
+    transition-duration: 0.5s;
+}
+
+h2 a:hover{
+    color: rgb(26, 71, 110);
+}
+
+.author{
+    color: rgb(29 52 73);
+    position: relative;
+    bottom: 1.5em;
+}

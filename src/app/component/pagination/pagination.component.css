@@ -1,0 +1,22 @@
+.allPaginationComponent {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.numberContainer {
+    padding: 3px 6px;
+    margin: 3px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    user-select: none;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.disabled{
+    cursor: unset;
+    background-color: gray;
+    color: rgb(71, 71, 71);
+}

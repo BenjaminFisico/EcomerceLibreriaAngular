@@ -1,0 +1,37 @@
+.categoriesContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 10% 0 0 0;
+}
+
+.categoriesContainer ul{
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    background-color: #73b5c987;
+}
+
+.selectedItem{
+    background-color: #7299a5;
+}
+
+.selectedItem a{
+    color: white;
+}
+
+.categoriesContainer ul li{
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.categoriesContainer ul li:hover{
+    background-color: #75bacf;
+}
+
+.categoriesContainer ul a{
+    text-decoration: none;
+    font-size: 17px;
+    width: 100%;
+}

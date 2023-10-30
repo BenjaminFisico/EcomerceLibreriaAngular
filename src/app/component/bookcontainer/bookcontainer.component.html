@@ -1,0 +1,10 @@
+<div class="bookContainer">
+    <div class="bookImg">
+        <img *ngIf="book.imgPath; else noImg" [src]="book.imgPath">
+        <ng-template #noImg>
+            <p>{{book.title}}</p>
+        </ng-template>
+    </div>
+    <h3><a [href]="'/books/'+book.id">{{book.title}}</a></h3>
+    <p><a href="/#">{{book.author}}</a></p>
+</div>

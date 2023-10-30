@@ -1,0 +1,15 @@
+<div class="completeSlider">
+    <i class="fa-solid fa-circle-left buttonSlider" (click)="sliderBack()"></i>
+    <div class="sliderContainer shadowBorder" [id]="containerID">
+                <div *ngFor="let slide of slideshow" class="sliderItem" style="background-color: rgb(47, 130, 202);">
+                    <p>{{slide}}</p>
+                </div>
+                
+    </div>
+    <i class="fa-solid fa-circle-right buttonSlider" (click)="sliderNext()"></i>
+</div>
+<div class="positionButtonsContainer">
+    <a *ngFor="let slide of slideshow; let i = index"
+     href="javascript:void(0)" (click)="sliderChangePositionButton(i)"
+      [class]="'positionButton' + ((sliderPosition == i) ? ' active':'')"></a>
+</div>

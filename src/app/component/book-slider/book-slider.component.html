@@ -1,0 +1,12 @@
+<div class="completeSliderBooks">
+    <i class="fa-solid fa-circle-left buttonSlider" (click)="sliderBack()"></i>
+    <div class="sliderContainer shadowBorder" [id]="containerID" >
+        <div class="slideBooks" id="booksSectionOne">
+            <app-bookcontainer *ngFor="let book of slideShow" [book]="book"></app-bookcontainer>
+        </div>
+        <div class="slideBooks" id="booksSectionTwo">
+            <app-bookcontainer *ngFor="let book of slideShowTwo" [book]="book"></app-bookcontainer>
+        </div>
+    </div>
+    <i class="fa-solid fa-circle-right buttonSlider" (click)="sliderNext()"></i>
+</div>

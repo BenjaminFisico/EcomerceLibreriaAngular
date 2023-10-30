@@ -1,0 +1,19 @@
+<div class="shoppingCartContainer">
+    <h2><i class="fa-solid fa-cart-shopping"></i> Carrito de compras</h2>
+    <div *ngIf="booksInCart.length > 0; else noBooks" class="allBookContainer shadowBorder">
+        <div *ngFor="let book of booksInCart" class="bookContainer">
+            <app-bookcontainer [book]="book"></app-bookcontainer>
+            <a class="warningButton" (click)="removeBookFromCart(book.id)">quitar del carrito</a>
+        </div>
+    </div>
+    <ng-template #noBooks>
+        <div class="noBooksCart shadowBorder">
+            <p>No hay libros en el carrito</p>
+            <p>Ir al <a href="/books">catalogo de libros</a></p>
+        </div>
+    </ng-template>
+
+    <div *ngIf="booksInCart.length > 0" id="buyButton" (click)="buyBooks()">
+        <a>Comprar ahora</a>
+    </div>
+</div>

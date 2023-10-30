@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+.shadowBorder{
+    box-shadow: 0 4px 5px 0px lightblue;
+}
+
+.fontMenuStyles li a{
+    color: gray;
+    font-weight: 600;
+    text-decoration: none;
+    user-select: none;
+    transition-duration: 0.4s;
+}
+
+.fontMenuStyles li a:hover{
+    color: rgb(112, 112, 112);
+    font-size: large;
+    cursor: pointer;
+}
